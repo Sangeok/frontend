@@ -1,0 +1,121 @@
+/* HeirofLightBold라는 font를 사용하기 위한 url을 가져옴 */
+@font-face {
+    font-family: 'HeirofLightBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+hr {
+    color : white;
+}
+
+* {
+    /* border-box를 통해 html의 sizee 내부에 content들이 들어가도록 한다. */
+    box-sizing: border-box;
+    margin : 0px;
+    padding: 0px;
+    color : white;
+    /* 모든 text에 대해 decoration(밑줄)을 없앰 */
+    text-decoration : none;
+    font-family: 'HeirofLightBold';
+}
+
+.background {
+    width : 100%;
+    height: 100%;
+    display : flex;
+    flex-direction: column;   
+}
+
+.background video {
+    position: absolute;
+    width : 100vw;
+    height: 100vh;
+    /* height의 값이 100vh가보다 작아지는 것을 방지 */
+    min-height : 100vh;
+    display : flex;
+    flex-direction: column;
+    object-fit : fill;   
+}
+
+.header {
+    position : fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height: 7.2rem;
+    padding : 0 4rem;
+    z-index : 1000;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header li {
+    list-style: none;
+}
+
+.header__menu {
+    display : flex;
+}
+
+.header__menu li {
+    margin-left : 18px;
+    font-size : 1.232em;
+}
+
+.header__user i {
+    margin-right : 8px;
+}
+
+.content {
+    position: absolute;
+    width : 100%;
+    /* 부모로부터 높이를 받아서 align-items center를 사용. */
+    height : 85%;
+    z-index : 1000;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    /* 마진을 주면 사라지고 패딩을 줘야함. */
+    padding : 6rem;
+}
+
+.contentMain {
+    width : 100%;
+    height : 100%;
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentSub {
+    display : flex;
+}
+
+.list-group {
+    color : white;
+    font-size: 1.05rem;
+}
+
+.list-group li {
+    margin : 4rem 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    color : black;
+    z-index: 1000;   
+    width : 100%;
+}
+
+/* .footer footer__content {
+    transform: translate(-50%,-50%);
+} */
