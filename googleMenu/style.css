@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    margin : 0px;
+    padding : 0px;
+}
+
+
+.wraaper{
+    display : flex;
+    margin : 0%;
+}
+
+.nav {
+    /* 양 side에 밀어넣기 위해 부모 display에 flex를 주고 justify-content를 space-between으로 처리*/
+    display : flex;
+    justify-content: space-between;
+}
+
+.menu__one {
+    display : flex;
+}
+
+.menu__two {
+    display : flex;
+    margin-right: 40px;
+}
+
+.nav li {
+    list-style: none;
+    font-weight: bold;
+    padding : 12px;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Roboto', sans-serif;  
+}
+
+.main {
+    height : 50vh;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin : auto;
+    font-size: 80px;
+    margin-bottom : 50px;
+}
+
+h1 span:nth-child(1) {
+    color: #4285f4;
+}
+
+h1 span:nth-child(2) {
+    color: #ea4335;
+}
+
+h1 span:nth-child(3) {
+    color: #fbbc05;
+}
+
+h1 span:nth-child(4) {
+    color: #4285f4;
+}
+
+h1 span:nth-child(5) {
+    color: #34a853;
+}
+
+h1 span:nth-child(6) {
+    color: #ea4335;
+}
+
+/* 검색bar를 직접 생성*/
+.searchBar {
+    position : relative;
+    width : 500px;
+    height : 30px;
+    margin : 10px auto;
+    border : 1px solid #e2e2e2;
+    border-radius: 20px;
+}
+
+input {
+    width : 85%;
+    height : 100%;
+    border : 0px;
+    border-color: #bdc1c6;
+    font-size: 16px;
+    /* 검색할 때 생기는 네모난 칸을 제거*/
+    outline: none;
+}
+
+.search__icons {
+    position: absolute;
+    left : 10px;
+    top : 10%;
+}
+
+i:hover {
+    cursor: pointer;
+}
+
+.keyboard_mic {
+    position: absolute;
+    right : 10px;
+    top : 10%;
+}
+
+.keyboard_mic i {
+    margin : 5px;
+}
+
+.hoogle_inner {
+    margin-top : 15px;
+    /*input tag에 대해 width와 height의 %를 지정했기 때문에 */
+    width : 160px;
+    height : 40px;
+    padding : 10px;
+    margin : 10px;
+    border-radius : 10px;
+    vertical-align : middle;
+}
+
+.hoogle_inner:hover {
+    cursor : pointer;
+}
